@@ -1,0 +1,14 @@
+C:\Users\Sasha Bray\Desktop\autoturel\AutoTurel\obj\Debug\net8.0\AutoTurel.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Sasha Bray\Desktop\autoturel\AutoTurel\obj\Debug\net8.0\AutoTurel.AssemblyInfoInputs.cache
+C:\Users\Sasha Bray\Desktop\autoturel\AutoTurel\obj\Debug\net8.0\AutoTurel.AssemblyInfo.cs
+C:\Users\Sasha Bray\Desktop\autoturel\AutoTurel\obj\Debug\net8.0\AutoTurel.csproj.CoreCompileInputs.cache
+C:\Users\Sasha Bray\Desktop\autoturel\AutoTurel\bin\Debug\net8.0\AutoTurel.exe
+C:\Users\Sasha Bray\Desktop\autoturel\AutoTurel\bin\Debug\net8.0\AutoTurel.deps.json
+C:\Users\Sasha Bray\Desktop\autoturel\AutoTurel\bin\Debug\net8.0\AutoTurel.runtimeconfig.json
+C:\Users\Sasha Bray\Desktop\autoturel\AutoTurel\bin\Debug\net8.0\AutoTurel.dll
+C:\Users\Sasha Bray\Desktop\autoturel\AutoTurel\bin\Debug\net8.0\AutoTurel.pdb
+C:\Users\Sasha Bray\Desktop\autoturel\AutoTurel\obj\Debug\net8.0\AutoTurel.dll
+C:\Users\Sasha Bray\Desktop\autoturel\AutoTurel\obj\Debug\net8.0\refint\AutoTurel.dll
+C:\Users\Sasha Bray\Desktop\autoturel\AutoTurel\obj\Debug\net8.0\AutoTurel.pdb
+C:\Users\Sasha Bray\Desktop\autoturel\AutoTurel\obj\Debug\net8.0\AutoTurel.genruntimeconfig.cache
+C:\Users\Sasha Bray\Desktop\autoturel\AutoTurel\obj\Debug\net8.0\ref\AutoTurel.dll
