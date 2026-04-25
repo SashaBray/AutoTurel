@@ -13,57 +13,64 @@
 *   **Y+** : Влево (Поперечное смещение) / Left (Lateral offset)
 *   **Z+** : Вверх (Высота) / Up (Altitude)
 
-> [RU] При Yaw = 0° ствол смотрит строго вдоль оси X.
-> [EN] When Yaw = 0°, the gun points strictly along the X axis.
-
 ---
 
-## 🚀 Возможности / Features
-- **Complex Physics**: Drag (G1/G7), Coriolis, Derivation, Gravity.
-- **Dynamic Atmosphere**: Real-time recalculation of air density and speed of sound based on altitude (Z).
-- **Iterative Solver**: Shooting method to minimize miss distance with adjustable convergence.
-- **Performance Profiling**: High-precision measurement of IO and Compute time.
-- **Fast Mode**: Non-disk execution for integration.
+## 🚀 Новые возможности / New Features
+- **Dual Mode**: 
+  - *Low Angle* (Настильная): Классическая траектория, поиск минимума дистанции.
+  - *High Angle* (Навесная): Минометный режим, использование эмпирических формул для коррекции Pitch и Yaw.
+- **Spherical Earth**: Учет кривизны планеты и динамическое изменение вектора гравитации.
+- **Smart Time Limits**: Раздельные лимиты `MaxFlightTime` для обычного режима и `MaxFlightTimeHighAngle` для навесного.
+- **Unified Output**: Вывод всегда возвращает массив данных для легкой интеграции.
 
 ---
 
 ## 💻 Примеры вызова / Usage Examples
 
-### 1. Полный расчет / Full Simulation
-[RU] С записью траектории в CSV и отладкой физики:
-[EN] With CSV trajectory logging and physics debugging:
+### 1. Настильный огонь (Default)
 ```bash
-dotnet run -- --target-pos 1500,0,50 --target-vel 0,25,0 --v0 820 --csv --debug
+dotnet run -- --target-pos 1000,0,0
 ```
 
-### 2. Быстрый режим / Fast Mode
-[RU] Мгновенный ответ без чтения JSON (используются встроенные таблицы G1/G7):
-[EN] Instant response without JSON IO (uses embedded G1/G7 tables):
+### 2. Навесной огонь (High Angle)
 ```bash
-dotnet run -- --target-pos 1000,0,0 --fast --silent
+dotnet run -- --target-pos 1000,0,0 --high-angle
 ```
-**Output:** `Pitch;Yaw;Miss;AngMiss;TimeMs`
+
+### 3. Быстрый режим (Fast Mode)
+[RU] Игнорирует JSON, использует встроенные таблицы G1/G7:
+[EN] Ignores JSON, uses embedded G1/G7 tables:
+```bash
+dotnet run -- --target-pos 1000,0,0 --fast
+```
 
 ---
 
-## ⚙️ Настройки по умолчанию / Default Settings
-[RU] Если параметры не указаны, используются значения из `env_defaults.json` или жестко заданные константы:
-[EN] If parameters are not specified, values from `env_defaults.json` or hardcoded constants are used:
+## 📊 Формат вывода / Output Format
+[RU] Программа всегда выводит результат последней строкой в формате:
+[EN] The program always outputs the result in the following format:
 
+`Pitch;Yaw;Miss;AngMiss;TimeMs`
 
-| Параметр / Parameter | Дефолт / Default | Описание / Description |
-| :--- | :--- | :--- |
-| `MuzzleVelocity` | 800.0 | [RU] Нач. скорость (м/с) / [EN] Muzzle velocity (m/s) |
-| `BallisticCoefficient` | 0.5 | [RU] Баллистический коэф. / [EN] Ballistic coefficient |
-| `Iterations` | 15 | [RU] Циклы пристрелки / [EN] Correction iterations |
-| `MaxFlightTime` | 15.0 | [RU] Лимит полета (с) / [EN] Max flight time (s) |
-| `ConvergenceFactor` | 0.8 | [RU] Коэф. сходимости / [EN] Convergence factor |
-| `ReportsDirectory` | "Reports" | [RU] Папка для CSV / [EN] Folder for CSV reports |
+- **Pitch**: [RU] Тангаж (°) / [EN] Elevation angle.
+- **Yaw**: [RU] Азимут (°) / [EN] Azimuth angle.
+- **Miss**: [RU] Линейный промах (м) / [EN] Linear miss distance.
+- **AngMiss**: [RU] Угловой промах (°) / [EN] Angular miss.
+- **TimeMs**: [RU] Общее время расчета (мс) / [EN] Total computation time.
+
+---
+
+## ⚙️ Настройки (env_defaults.json)
+
+| Параметр / Parameter | Описание / Description |
+| :--- | :--- |
+| `UseHighAngle` | [RU] Включить навесной режим / [EN] Enable high-angle mode |
+| `MaxFlightTimeHighAngle` | [RU] Лимит времени для навеса (с) / [EN] High-angle time limit (s) |
+| `PlanetRadius` | [RU] Радиус планеты (м) / [EN] Planet radius (m) |
+| `ConvergenceFactor` | [RU] Фактор сходимости / [EN] Algorithm convergence factor |
 
 ---
 
 ## 🛠 Технологии / Tech Stack
 - **Language**: C# 12 (.NET 8 SDK)
-- **Math**: System.Numerics (SIMD accelerated)
-- **Serialization**: System.Text.Json
-- **Logging**: CSV, High-precision Stopwatch
+- **Physics**: Dynamic Drag (G1/G7), Coriolis, Derivation, Gravity, Spherical Geometry.

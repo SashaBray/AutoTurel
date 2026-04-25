@@ -7,21 +7,22 @@ namespace AutoTurel
 {
     /// <summary>
     /// Конфигурация путей и системных настроек. 
+    /// Configuration of file paths and system settings.
     /// </summary>
     public class AppConfig
     {
         public string DragTablesPath { get; set; } = "drags.json";
         public string EnvironmentDefaultsPath { get; set; } = "env_defaults.json";
-        
-        // Настройки логирования
         public bool EnableDebugOutput { get; set; } = false;
         public bool SaveTrajectoryCsv { get; set; } = false;
-        
-        /// <summary> Путь к папке для сохранения CSV отчетов. </summary>
         public string ReportsDirectory { get; set; } = "Reports";
         public string CsvFileNameTemplate { get; set; } = "traj_{0}_{1}.csv";
     }
 
+    /// <summary>
+    /// Физические параметры и лимиты симуляции. 
+    /// Physical parameters and simulation limits.
+    /// </summary>
     public class EnvironmentDefaults
     {
         public double TemperatureBase { get; set; } = 15.0;
@@ -34,12 +35,16 @@ namespace AutoTurel
         public string DefaultDragModel { get; set; } = "G1";
         public double BallisticCoefficient { get; set; } = 0.5;
         public double DerivationCoefficient { get; set; } = 0.0001;
-
-        /// <summary> Количество итераций наведения по умолчанию. </summary>
         public int Iterations { get; set; } = 15;
-
-        /// <summary> Коэффициент сходимости (0.1 - 1.0). </summary>
         public float ConvergenceFactor { get; set; } = 0.8f;
+        public double PlanetRadius { get; set; } = 6371000.0;
+        public bool UseHighAngle { get; set; } = false;
+
+        /// <summary> Лимит времени для настильной стрельбы. / Time limit for low-angle fire. </summary>
+        public float MaxFlightTime { get; set; } = 25.0f;
+
+        /// <summary> Лимит времени для навесной стрельбы. / Time limit for high-angle fire. </summary>
+        public float MaxFlightTimeHighAngle { get; set; } = 150.0f;
     }
 
     public static class ConfigLoader

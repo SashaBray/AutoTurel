@@ -12,3 +12,19 @@ C:\Users\Sasha Bray\Desktop\autoturel\AutoTurel\obj\Debug\net8.0\refint\AutoTure
 C:\Users\Sasha Bray\Desktop\autoturel\AutoTurel\obj\Debug\net8.0\AutoTurel.pdb
 C:\Users\Sasha Bray\Desktop\autoturel\AutoTurel\obj\Debug\net8.0\AutoTurel.genruntimeconfig.cache
 C:\Users\Sasha Bray\Desktop\autoturel\AutoTurel\obj\Debug\net8.0\ref\AutoTurel.dll
+C:\Users\Sasha Bray\Desktop\autoturel\AutoTurel\obj\Debug\net8.0\AutoTurel.sourcelink.json
+C:\Sasha\archive_programming\c#\autoturel\AutoTurel\bin\Debug\net8.0\AutoTurel.exe
+C:\Sasha\archive_programming\c#\autoturel\AutoTurel\bin\Debug\net8.0\AutoTurel.deps.json
+C:\Sasha\archive_programming\c#\autoturel\AutoTurel\bin\Debug\net8.0\AutoTurel.runtimeconfig.json
+C:\Sasha\archive_programming\c#\autoturel\AutoTurel\bin\Debug\net8.0\AutoTurel.dll
+C:\Sasha\archive_programming\c#\autoturel\AutoTurel\bin\Debug\net8.0\AutoTurel.pdb
+C:\Sasha\archive_programming\c#\autoturel\AutoTurel\obj\Debug\net8.0\AutoTurel.GeneratedMSBuildEditorConfig.editorconfig
+C:\Sasha\archive_programming\c#\autoturel\AutoTurel\obj\Debug\net8.0\AutoTurel.AssemblyInfoInputs.cache
+C:\Sasha\archive_programming\c#\autoturel\AutoTurel\obj\Debug\net8.0\AutoTurel.AssemblyInfo.cs
+C:\Sasha\archive_programming\c#\autoturel\AutoTurel\obj\Debug\net8.0\AutoTurel.csproj.CoreCompileInputs.cache
+C:\Sasha\archive_programming\c#\autoturel\AutoTurel\obj\Debug\net8.0\AutoTurel.sourcelink.json
+C:\Sasha\archive_programming\c#\autoturel\AutoTurel\obj\Debug\net8.0\AutoTurel.dll
+C:\Sasha\archive_programming\c#\autoturel\AutoTurel\obj\Debug\net8.0\refint\AutoTurel.dll
+C:\Sasha\archive_programming\c#\autoturel\AutoTurel\obj\Debug\net8.0\AutoTurel.pdb
+C:\Sasha\archive_programming\c#\autoturel\AutoTurel\obj\Debug\net8.0\AutoTurel.genruntimeconfig.cache
+C:\Sasha\archive_programming\c#\autoturel\AutoTurel\obj\Debug\net8.0\ref\AutoTurel.dll

@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Sasha Bray\\Desktop\\autoturel\\AutoTurel\\AutoTurel.csproj",
+      "projectUniqueName": "C:\\Sasha\\archive_programming\\c#\\autoturel\\AutoTurel\\AutoTurel.csproj",
       "projectName": "AutoTurel",
-      "projectPath": "C:\\Users\\Sasha Bray\\Desktop\\autoturel\\AutoTurel\\AutoTurel.csproj",
+      "projectPath": "C:\\Sasha\\archive_programming\\c#\\autoturel\\AutoTurel\\AutoTurel.csproj",
       "packagesPath": "C:\\Users\\Sasha Bray\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Sasha Bray\\Desktop\\autoturel\\AutoTurel\\obj\\",
+      "outputPath": "C:\\Sasha\\archive_programming\\c#\\autoturel\\AutoTurel\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Sasha Bray\\AppData\\Roaming\\NuGet\\NuGet.Config"

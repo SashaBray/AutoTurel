@@ -9,6 +9,8 @@
   "DefaultDragModel": "G1",
   "BallisticCoefficient": 0.5,
   "DerivationCoefficient": 0.0001,
-  "Iterations": 3,
-  "ConvergenceFactor": 1.0
+  "Iterations": 15,
+  "ConvergenceFactor": 0.8,
+  "MaxFlightTime": 25.0,
+  "PlanetRadius": 6371000.0
 }

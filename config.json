@@ -2,7 +2,7 @@
   "DragTablesPath": "drags.json",
   "EnvironmentDefaultsPath": "env_defaults.json",
   "EnableDebugOutput": false,
-  "SaveTrajectoryCsv": false,
+  "SaveTrajectoryCsv": true,
   "ReportsDirectory": "Reports",
   "CsvFileNameTemplate": "traj_{0}_{1}.csv"
 }

@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AutoTurel")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0f471052e5fdb3cb941bb8c9bde8576565c0aac1")]
 [assembly: System.Reflection.AssemblyProductAttribute("AutoTurel")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AutoTurel")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
